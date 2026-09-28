@@ -21,10 +21,10 @@ public:
             int diff1 = task1[1] - task1[0];
             int diff2 = task2[1] - task2[0];
 
-            return diff1 < diff2;
+            return diff1 > diff2;
         };
 
-        sort(tasks.rbegin(), tasks.rend(), lambda);
+        sort(tasks.begin(), tasks.end(), lambda);
 
         while(st <= end) {
 
